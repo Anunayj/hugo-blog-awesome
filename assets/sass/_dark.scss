@@ -271,10 +271,15 @@
       }
     }
   }
+
+  .invert {
+    filter: invert(1);
+  }
 }
 
 // support JS disabled environment with media query
 @media (prefers-color-scheme: dark) {
+
   // use "light" class to avoid style conflicts in js enabled environment
   html:not(.light) {
     @include dark-mode()

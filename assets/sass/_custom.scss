@@ -1,0 +1,21 @@
+.overflow-parent {
+    @media not screen and (max-width: 768px) {
+        left: 50%;
+        margin-left: -40vw;
+        margin-right: -40vw;
+        max-width: 100vw;
+        position: relative;
+        right: 50%;
+        width: 80vw !important;
+    }
+}
+
+.emgithub {
+    width: 100%;
+    height: 500px;
+    @include media-query($on-mobile) {
+        height: 50vh;
+    }
+    border-radius: .3rem;
+    border: 0;
+}
